@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+// Utility Classes
+.btn{
+    display: inline-block;
+    padding: 1rem 1.6rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin:0 auto;
+}
+
+
+.main-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    padding:.1em 0;
+    margin: .1em 0;
+}
+.secondary-heading{
+    font-size:1.5rem;
+    font-weight: bold;
+    padding:.5em 0;
+    margin: 1rem 0;
+}
+
+
+// utility classes end
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    font-size: 62.5%;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+@import "variable";
+@import "header";
+@import "navbar";
+@import "aboutme";
+@import "services";
+@import "portfolio";
+@import "contact";
+@import "footer";
+
+

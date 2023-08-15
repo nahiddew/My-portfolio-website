@@ -1,0 +1,74 @@
+#portfolio{
+    padding: 5rem auto;
+    h1{
+        // font-size: 3rem ;
+        @include mainHeading(5rem);
+    }
+    .work-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px , 1fr));
+        grid-gap:50px;
+        margin:3rem 0;
+        .work{
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform .5s;
+            
+            img{
+                height: 250px;
+                transition: transform 0.5s;
+            }
+
+
+            &:hover img{
+                transform: scale(1.1);
+
+            }
+            &:hover .work-content{
+                height: 100%;
+                opacity: 1;
+            }
+            
+            .work-content{
+                background:linear-gradient(rgba(0,0,0.3),rgba(0,0,0,.3)) rgba(37, 199, 48, 0.519);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position:absolute;
+                bottom: 0;
+                left: 0;
+                width:100%;
+                height:0;
+                transition: height .5s;
+                opacity: 0;
+
+               
+                h3{
+                    @include subHeading(3.1rem);
+                    color:white;
+                }
+                p{
+                   @include subTitle(1.5rem);
+                    padding: 1em;
+                    color: white;
+
+                  
+                }
+                i{
+                    font-size: 2rem;
+                    margin-top: .5rem;
+                    padding: .5em;
+                    color: #000000;
+                    background-color: #fff;
+                    border-radius: 50%;
+                  
+                    
+                }
+            }
+        }
+        
+}
+}

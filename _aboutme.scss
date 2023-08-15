@@ -1,0 +1,92 @@
+#about{
+    padding: 50px;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .about-col1{
+            flex-basis: 35%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+        }
+        .about-col2{
+            flex-basis: 60%;
+            margin: auto;
+            h2{
+                font-size: sub-heading($main-font);
+                color: $main-color;
+            //    @include subHeading(3.1rem);
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            .about-titles{
+                display: flex;
+                justify-content: space-between;
+               
+               
+                p{
+                    color:white;
+                }
+                
+                margin-top: 1rem ;
+                .title-links{
+                    // @include subTitle(1.9rem);
+                    font-size: title-heading($main-font);
+                    color: $main-color;
+                    font-weight: bold;
+                    position: relative;
+                    cursor: pointer;
+                  
+                 
+                    &.active-link::after{
+                        width: 80%;
+                    }
+                    
+                   
+                    
+                    &::after{
+                        content: '';
+                        height: 5px;
+                        width: 0;
+                        background: $main-color;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        transition: .5s;
+                        
+                        
+                        
+                    }
+                    
+                    
+                }
+
+            }
+            .details{
+                display: none;
+                
+                margin-top: 5em;
+                &.active{
+                    display:block;
+                }
+
+                ul{
+                    list-style: none;
+                    margin: 1.6rem 0;
+                    span{
+                        // color: red;
+                        // font-size: 2rem;
+                        @include subTitle(1.6rem);
+                    }
+                    li{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

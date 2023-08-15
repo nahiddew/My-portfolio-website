@@ -1,0 +1,44 @@
+$main-color :#1224B2;
+$secondary-color:#FFDE6C;
+
+$container: 1200;
+$main-font: 1.6;
+
+@function main-heading($value){
+        @return ($value*1.618)*2+ rem;
+}
+@function sub-heading($value){
+        @return ($value*1.618)*1.5 + rem;
+}
+@function title-heading($value){
+        @return ($value*1.618)*1.5/2+ rem;
+}
+
+
+
+
+
+
+
+
+@mixin mainHeading($value){
+    
+        // color: black;
+        font-size: $value;
+        font-weight: bold;
+    
+}
+@mixin subHeading($value){
+    
+        color: $main-color;
+        font-size: $value;
+        font-weight: bold;
+    
+}
+@mixin subTitle($value){
+    
+        color:  $main-color;
+        font-size: $value;
+        font-weight: bold;
+    
+}
